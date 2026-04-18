@@ -13,19 +13,23 @@
     <button id="resetBtn" title="Reset session">🔄</button>
 
 <div class="container">
+
     <h1>⏳ Time Distortion</h1>
-    <p id="instruction">Tap when you think 10 seconds passed</p>
 
-    <div class="game-area">
-
-    <!-- <div id="breathCircle" class="breath" style="display:none;"></div> -->
-
-    <button id="gameButton">START</button>
-
-</div>
-
+    <!-- RESULT AREA (TOP) -->
     <div id="result"></div>
+
+    <!-- GAME AREA -->
+    <div id="gameArea" class="game-area">
+        <div id="breathCircle" class="breath" style="display:none;"></div>
+        <button id="gameButton">START</button>
+    </div>
+
+    <!-- TRY AGAIN BUTTON -->
+    <button id="retryBtn" style="display:none;">Try Again 🔁</button>
+
 </div>
+
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
